@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    full_lst = []
+    lst_grades = []
+    names = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        lst_grades.append(score)
+        full_lst.append([name,score])
+        
+    lst_grades.sort()
+    second_lowest = lst_grades[1]
+            
+    for i in full_lst:
+        if i[1] == second_lowest:
+            names.append(i[0])
+    names.sort()        
+    for i in names:
+        print(i)  
