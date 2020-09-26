@@ -1,0 +1,13 @@
+import random
+answer = random.randint(0,10)
+for guess in range(5):
+    guess = input("what is you guess?")
+    if int(guess) == answer:
+       print("you got it")
+       break
+    elif int(guess) > answer:
+        print ("too high")
+    elif int(guess) < answer:
+        print("too low")
+else :
+    print("you have used up all of your guesses")
